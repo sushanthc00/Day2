@@ -9,7 +9,7 @@ public class Holiday {
         this.month=month;
     }
 
-    public Boolean checkSameMonth(Holiday holiday){
+    public Boolean inSameMonth(Holiday holiday){
         return this.month.equals(holiday.month);
     }
 
@@ -24,8 +24,8 @@ public class Holiday {
     public static void main(String args[])
     {
         Holiday holiday = new Holiday("Independence Day", 4, "July");
-        Holiday holiday1 = new Holiday("Independence Day", 4, "AUG");
-        System.out.println("Are the months equal? " +holiday.checkSameMonth(holiday1));
+        Holiday holiday1 = new Holiday("Independence Day", 4, "July");
+        System.out.println("Are the months equal? " +holiday.inSameMonth(holiday1));
 
     }
 }
